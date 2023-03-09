@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cheese game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="screen">
+      <div id="game">
+        <div id="game_background">
+          <img id="background1_img" src="img/background1.jpg" />
+        </div>
+        <div id="game_elements">
+          <div id="cheese_container1" class="animation">
+            <img
+              id="cheese_sprite1"
+              class="pictures"
+              src="img/cheese.png"
+              alt=""
+            />
+          </div>
+          <div id="cheese_container2" class="animation">
+            <img
+              id="cheese_sprite2"
+              class="pictures"
+              src="img/cheese.png"
+              alt=""
+            />
+          </div>
+          <div id="cheese_container3" class="animation">
+            <img
+              id="cheese_sprite3"
+              class="pictures"
+              src="img/cheese.png"
+              alt=""
+            />
+          </div>
+          <div id="cheese_container4" class="animation">
+            <img
+              id="cheese_sprite4"
+              class="pictures"
+              src="img/cheese.png"
+              alt=""
+            />
+          </div>
+          <div id="cupcake_container5" class="animation">
+            <img
+              id="cupcake_sprite5"
+              class="pictures"
+              src="img/cupcake.png"
+              alt=""
+            />
+          </div>
+          <div id="pie_container6" class="animation">
+            <img id="pie_sprite6" class="pictures" src="img/pie.png" alt="" />
+          </div>
+          <div id="fries_container7" class="animation">
+            <img
+              id="fries_sprite7"
+              class="pictures"
+              src="img/fries.png"
+              alt=""
+            />
+          </div>
+          <div id="chocolade_container8" class="animation">
+            <img
+              id="chocolade_sprite8"
+              class="pictures"
+              src="img/chocolade.png"
+              alt=""
+            />
+          </div>
+          <div id="cheesecake_container9" class="animation">
+            <img
+              id="cheesecake_sprite9"
+              class="pictures"
+              src="img/cheesecake.png"
+              alt=""
+            />
+          </div>
+          <div id="icecream_container10" class="animation">
+            <img
+              id="icecream_sprite10"
+              class="pictures"
+              src="img/icecream.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="game_ui">
+          <div id="score_board">
+            <span id="score_count">0</span>
+            <img id="score_image" src="img/cheese.png" />
+          </div>
+          <div id="life_board">
+            <img
+              id="cheeseheart1"
+              src="img/cheese_heart.png"
+              class="active_heart"
+            />
+            <img
+              id="cheeseheart2"
+              src="img/cheese_heart.png"
+              class="active_heart"
+            />
+            <img
+              id="cheeseheart3"
+              src="img/cheese_heart.png"
+              class="active_heart"
+            />
+          </div>
+          <div id="time_board">
+            <div id="time_container">
+              <div id="time_sprite" class=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="start">
+        <h2>Cheeseclicker</h2>
+        <p>collect 10 cheeses before time runs out</p>
+
+        <button id="btn_start" class="pulse">Start</button>
+      </div>
+      <div id="game_over" class="hidden">
+        <h2>Game Over</h2>
+        <button id="btn_restart" class="pulse">Restart Game</button>
+      </div>
+      <div id="level_complete" class="hidden">
+        <h2>Level Complete</h2>
+        <button id="btn_go_to_start" class="pulse">Go to start</button>
+      </div>
+    </div>
+
+    <audio id="sound_background" src="sounds/Background.mp3"></audio>
+    <audio id="sound_click" src="sounds/click.mp3"></audio>
+    <audio id="sound_bomb" src="sounds/bomb1.mp3"></audio>
+    <audio id="sound_tada" src="sounds/tada.mp3"></audio>
+    <audio id="sound_game_over" src="sounds/gameOver.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
